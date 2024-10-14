@@ -1,0 +1,182 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease;
+}
+
+
+body {
+    background-color: var(--white2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_item,
+.right_item {
+    width: 50vw;
+    height: 100vh;
+}
+
+.right_item {
+    padding: 20px 30px;
+}
+
+.right_content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../assets/img/well-done-steak-homemade-potatoes.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 50px;
+    padding-left: 40px;
+}
+
+.right_content h2 {
+    color: var(--white);
+    font-family: var(--main_font);
+    font-size: clamp(30px, 5vw, 70px);
+}
+
+.right_content p {
+    color: var(--white);
+    font-family: var(--main_font);
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+.left_item {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+}
+
+form {
+    height: 70vh;
+    width: 100%;
+}
+
+form h2 {
+    font-family: var(--main_font);
+    font-size: clamp(30px, 5vw, 70px);
+}
+
+form p {
+    font-family: var(--main_font);
+    font-size: clamp(20px, 2vw, 40px);
+    margin-bottom: 25px;
+}
+
+.input_item {
+    display: grid;
+    position: relative;
+}
+
+.input_item input {
+    height: 80px;
+    border-bottom: 1px solid var(--black);
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 19px;
+}
+
+#password {
+    margin-bottom: 20px;
+}
+
+.input_item input::placeholder {
+    text-transform: capitalize;
+}
+
+.bx {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    font-size: 27px;
+}
+
+.bx-show {
+    cursor: pointer;
+}
+
+.form_link {
+    text-align: right;
+}
+
+.form_link .forgot {
+    font-size: clamp(17px, 1vw, 23px);
+    color: var(--second_color);
+    transition: var(--trans);
+    margin-bottom: 20px;
+}
+
+.form_link .forgot:hover {
+    color: var(--primary_color);
+}
+
+.button {
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary_color);
+    border: none;
+    text-transform: capitalize;
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: var(--trans);
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: var(--second_color);
+}
+
+.sign {
+    text-align: center;
+}
+
+.sign p {
+    font-size: clamp(17px, 1.3vw, 30px);
+    font-family: "Syne";
+}
+
+.sign p a {
+    color: var(--primary_color);
+    font-weight: 500;
+    transition: var(--trans);
+}
+
+.sign p a:hover {
+    color: var(--black);
+}
+
+@media (max-width: 600px) {
+    .right_item {
+        display: none;
+    }
+
+    .left_item {
+        width: 100vw;
+    }
+}

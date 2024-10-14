@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+@font-face {
+  font-family: 'Echelon';
+  src: url('./assets/fonts/Echelon.ttf'), format(truetype);
+  src: url('./assets/fonts/Echelon.woff'), format(woff);
+  src: url('./assets/fonts/Echelon.woff2'), format(woff2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Syne", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary_color: #cfbd97;
+  --second_color: #000;
+  --black: #1e1e1e;
+  --white: #fff;
+  --white2: #f5f5f5;
+  --main_font: "Echelon";
+}
+
+
+body {
+  background-color: var(--white2);
+  width: 100vw;
 }
