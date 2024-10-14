@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/Login.css';
 import Signin from "./Signin";
+import Home from "./Home";
 import logo from '../assets/img/logo Zeduc.png'
 
 
@@ -13,18 +14,18 @@ export default function Login() {
                     <h1><img src={logo} className="logo" /></h1>
                 </div>
 
-                <form action="">
+                <form action="/home">
                     <h2>Connectez-vous</h2>
                     <p>Entez vos identifiants pour avoir accès à votre historique</p>
 
                     <div className="input_container">
                         <div className="input_item">
-                            <input type="email" name="email" id="email" placeholder="email" />
+                            <input type="email" name="email" id="email" placeholder="email" required />
                             <i class='bx bx-envelope' ></i>
                         </div>
 
                         <div className="input_item">
-                            <input type="password" name="password" id="password" placeholder="password" />
+                            <input type="password" name="password" id="password" placeholder="password" required />
                             <i class='bx bx-show' ></i>
                         </div>
                     </div>
