@@ -1,0 +1,113 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease-in;
+}
+
+header {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+nav {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.profil_container {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.profil {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav_end {
+    display: flex;
+    align-items: center;
+}
+
+.cart {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.nav_links {
+    display: flex;
+}
+
+.nav_links li a {
+    margin-right: 30px;
+    font-family: var(--main_font);
+    color: var(--second_color);
+    font-size: 25px;
+    position: relative;
+    transition: var(--trans);
+}
+
+.nav_links li .active::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary_color);
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.nav_links li a:hover {
+    color: var(--primary_color);
+}
+
+.hamburger {
+    width: 50px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.burger {
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+}
+
+@media (max-width: 660px) {
+    .nav_links {
+        display: none;
+    }
+
+    .profil_container {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

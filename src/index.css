@@ -25,10 +25,12 @@
   --white: #fff;
   --white2: #f5f5f5;
   --main_font: "Echelon";
+  --trans: .3s ease-in;
 }
 
 
 body {
-  background-color: var(--second_color);
+  background-color: var(--white2);
   width: 100vw;
+  overflow-x: hidden;
 }

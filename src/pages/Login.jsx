@@ -11,7 +11,7 @@ export default function Login() {
         <div className="container">
             <div className="left_item">
                 <div className="left_top">
-                    <h1><img src={logo} className="logo" /></h1>
+                    <h1><Link to="/home"><img src={logo} className="logo" /></Link></h1>
                 </div>
 
                 <form action="/home">
@@ -34,7 +34,7 @@ export default function Login() {
                         <Link to="/signin" className="forgot">Mot de passe oublié ?</Link>
                     </div>
                     <button type="submit" className="button">valider</button>
-                    <div className="sign"><p>Vous n'avez pas de compte ? <Link to="">Inscrivez-vous</Link></p></div>
+                    <div className="sign"><p>Vous n'avez pas de compte ? <Link to="/signin">Inscrivez-vous</Link></p></div>
                 </form>
             </div>
 
