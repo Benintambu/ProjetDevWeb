@@ -1,0 +1,112 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease-in;
+}
+
+.main_contact {
+    width: 100vw;
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.contact_container {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.contactTop_left h4 {
+    font-family: var(--main_font);
+    font-size: clamp(30px, 3vw, 40px);
+    margin-bottom: 15px;
+}
+
+.contactTop_left a {
+    font-family: var(--main_font);
+    font-size: clamp(23px, 2.5vw, 40px);
+    color: var(--second_color);
+    text-decoration: underline;
+}
+
+.contactTop_right p {
+    font-family: var(--main_font);
+    font-size: clamp(23px, 2vw, 35px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact_form span {
+    font-family: var(--main_font);
+    font-size: clamp(23px, 2vw, 35px);
+}
+
+.contact_form {
+    display: grid;
+    height: auto;
+}
+
+.contact_form input {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid var(--black);
+    border-left: none;
+    border-right: none;
+    height: 70px;
+}
+
+.contact_form input::placeholder {
+    font-family: var(--main_font);
+    font-size: clamp(26px, 2.5vw, 40px);
+}
+
+#text {
+    resize: none;
+    height: 120px;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid var(--black);
+    border-left: none;
+    font-size: clamp(26px, 2.5vw, 40px);
+    border-right: none;
+    padding-top: 15px;
+    font-family: var(--main_font);
+    margin-bottom: 12px;
+}
+
+.contact_form button {
+    padding: 16px 34px;
+    background-color: var(--primary_color);
+    color: var(--white);
+    border: none;
+    font-family: var(--main_font);
+    font-size: clamp(19px, 1vw, 25px);
+    transition: var(--trans);
+    cursor: pointer;
+}
+
+.contact_form button:hover {
+    background-color: var(--black);
+}
+
+.contact_bot p {
+    font-size: clamp(23px, 1.5vw, 30px);
+    font-family: var(--main_font);
+}
+
+@media (min-width: 850px) {
+    .contact_top {
+        display: flex;
+        width: 90vw;
+        justify-content: space-between;
+    }
+}
