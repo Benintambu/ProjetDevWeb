@@ -1,13 +1,3 @@
-:root {
-    --primary_color: #cfbd97;
-    --second_color: #000;
-    --black: #1e1e1e;
-    --white: #fff;
-    --white2: #f5f5f5;
-    --main_font: "Echelon";
-    --trans: .3s ease;
-}
-
 body {
     overflow-x: hidden;
 }
@@ -290,6 +280,7 @@ body {
     left: 0;
     top: 0;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .temoig {

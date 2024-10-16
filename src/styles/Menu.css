@@ -1,0 +1,157 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease;
+}
+
+.main_menu {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.mainMenu_container {
+    width: 90vw;
+    height: auto;
+    padding-top: 40px;
+}
+
+.main_top h4 {
+    font-family: var(--main_font);
+    font-size: clamp(30px, 2.5vw, 40px);
+}
+
+.main_top p {
+    margin-bottom: 20px;
+}
+
+.main_top form {
+    position: relative;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.main_top form input {
+    width: 100%;
+    height: 70px;
+    border: none;
+    padding-left: 40px;
+    border-radius: 10px;
+}
+
+.loupe {
+    width: 20px;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+
+.main_cards {
+    display: grid;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+
+.cards_item {
+    padding: 10px 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.card_top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_top img {
+    width: 200px;
+}
+
+.bx-star {
+    position: relative;
+    padding-top: 5px;
+}
+
+.card_bot h2 {
+    font-family: var(--main_font);
+    margin-bottom: 15px;
+}
+
+.card_bot p,
+.card_bot span {
+    font-family: var(--main_font);
+    text-transform: capitalize;
+    font-size: clamp(20px, 1.5vw, 30px);
+    margin-bottom: 15px;
+}
+
+.cardBot_bot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.cardBot_left p {
+    font-size: 17px;
+}
+
+.cardBot {
+    display: flex;
+    align-items: center;
+    height: auto;
+
+}
+
+.cardBot_bot p {
+    font-family: "Poppins";
+}
+
+.bx-star {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.cardBot_right .cart {
+    cursor: pointer;
+}
+
+.more_btn {
+    background-color: var(--primary_color);
+    color: var(--white);
+    border: none;
+    font-family: var(--main_font);
+    text-transform: capitalize;
+    padding: 16px 34px;
+    font-size: clamp(20px, 2vw, 30px);
+    cursor: pointer;
+    margin-top: 12px;
+    transition: var(--trans);
+}
+
+.more_btn:hover {
+    background-color: var(--second_color);
+}
+
+@media (min-width: 660px) {
+    .main_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1100px) {
+    .main_cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -34,8 +34,6 @@ const NavBar = () => {
                         <div className="burger"></div>
                     </div>
                 </div>
-
-
             </nav>
         </header>
 

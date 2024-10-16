@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/Home.css';
+import Footer from "../components/Footer";
 import profil from '../assets/img/Profil.jpg'
 import plat1 from '../assets/img/plat1.png';
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import plat2 from '../assets/img/plat2.jpg';
 import eventImg from '../assets/img/people.png';
 import quote from '../assets/img/citation.png'
@@ -116,7 +116,7 @@ const Main = () => {
                 </div>
             </div>
         </main>
-    )
+    );
 }
 
 export default Home;
