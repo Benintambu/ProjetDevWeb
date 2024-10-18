@@ -87,7 +87,7 @@ const Main = () => {
                         <div className="event_left">
                             <h3>Evénements</h3>
                             <p>Participez à des mini-jeux et tentez des gagner des prix ou des points supplémentaires. </p>
-                            <Link to=''>en sovoir plus</Link>
+                            <Link to='/event'>en sovoir plus</Link>
                         </div>
 
                         <img src={eventImg} alt="Personnes" className="event_img" />

@@ -22,7 +22,7 @@ const Main = () => {
                 <div className="contact_top">
                     <div className="contactTop_left">
                         <h4>Contactez-nous</h4>
-                        <a href="">ntambube@gmail.com</a>
+                        <a href="mailto:ntambube@gmail.com">ntambube@gmail.com</a>
                     </div>
 
                     <div className="contactTop_right">

@@ -29,12 +29,13 @@
     font-family: var(--main_font);
     font-size: clamp(30px, 3vw, 40px);
     margin-bottom: 15px;
+    color: var(--white2);
 }
 
 .contactTop_left a {
     font-family: var(--main_font);
     font-size: clamp(23px, 2.5vw, 40px);
-    color: var(--second_color);
+    color: var(--white2);
     text-decoration: underline;
 }
 
@@ -43,6 +44,7 @@
     font-size: clamp(23px, 2vw, 35px);
     margin-top: 20px;
     margin-bottom: 20px;
+    color: var(--white2);
 }
 
 .contact_form span {
@@ -58,15 +60,18 @@
 .contact_form input {
     background-color: transparent;
     border-top: none;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--white2);
     border-left: none;
     border-right: none;
     height: 70px;
+    color: var(--white2);
+    font-size: clamp(25px, 1.5vw, 40px);
 }
 
 .contact_form input::placeholder {
     font-family: var(--main_font);
     font-size: clamp(26px, 2.5vw, 40px);
+    color: var(--white2);
 }
 
 #text {
@@ -74,13 +79,14 @@
     height: 120px;
     background-color: transparent;
     border-top: none;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--white2);
     border-left: none;
     font-size: clamp(26px, 2.5vw, 40px);
     border-right: none;
     padding-top: 15px;
     font-family: var(--main_font);
     margin-bottom: 12px;
+    color: var(--white2);
 }
 
 .contact_form button {
@@ -101,6 +107,7 @@
 .contact_bot p {
     font-size: clamp(23px, 1.5vw, 30px);
     font-family: var(--main_font);
+    color: var(--white2);
 }
 
 @media (min-width: 850px) {
@@ -108,5 +115,9 @@
         display: flex;
         width: 90vw;
         justify-content: space-between;
+    }
+
+    #text {
+        height: 200px;
     }
 }

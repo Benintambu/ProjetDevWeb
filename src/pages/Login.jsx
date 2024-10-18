@@ -21,12 +21,12 @@ export default function Login() {
                     <div className="input_container">
                         <div className="input_item">
                             <input type="email" name="email" id="email" placeholder="email" required />
-                            <i class='bx bx-envelope' ></i>
+                            <i class='bx bxs-envelope' ></i>
                         </div>
 
                         <div className="input_item">
                             <input type="password" name="password" id="password" placeholder="password" required />
-                            <i class='bx bx-show' ></i>
+                            <i class='bx bxs-show eye'></i>
                         </div>
                     </div>
 

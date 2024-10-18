@@ -1,0 +1,144 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease;
+}
+
+.main_cart {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main_container {
+    color: var(--white);
+    width: 90vw;
+}
+
+.main_container h2 {
+    font-family: var(--main_font);
+    font-size: clamp(30px, 4vw, 60px);
+}
+
+.main_container p {
+    margin-bottom: 20px;
+}
+
+.cart_histo {
+    width: min(300px, 100%);
+    background-color: var(--black);
+    height: 150px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.bx-chevron-down,
+.bx-chevron-up {
+    color: var(--white);
+    position: relative;
+}
+
+.plate {
+    width: 200px;
+}
+
+.histo_container {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.histo_item {
+    background-color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.histo_left {
+    display: flex;
+    align-items: center;
+}
+
+.corbeille {
+    width: 25px;
+    cursor: pointer;
+}
+
+.left_content {
+    height: 100%;
+    padding-top: 5px;
+}
+
+.left_content h3 {
+    font-family: var(--main_font);
+    font-size: clamp(23px, 2vw, 35px);
+    margin-bottom: 10px;
+}
+
+.histo_right {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#minus,
+#plus {
+    display: none;
+}
+
+.bot_right {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.histoRight_bot {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.botRight_left {
+    height: 30%;
+}
+
+.botRight_left {
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.fleche {
+    width: 17px;
+    cursor: pointer;
+}
+
+.flc_top {
+    transform: rotate(90deg);
+}
+
+.flc_bot {
+    transform: rotate(270deg);
+}
+
+.bot_right p {
+    padding-top: 15px;
+}

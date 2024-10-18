@@ -3,7 +3,7 @@ body {
 }
 
 .hero {
-    width: 100%;
+    width: 100vw;
     height: 88vh;
     display: flex;
     justify-content: center;
@@ -74,11 +74,17 @@ body {
     font-family: var(--main_font);
     font-size: clamp(30px, 4vw, 50px);
     margin-bottom: 15px;
+    color: var(--black);
 }
+
+.itm1_bot span {
+    color: var(--black);
+}
+
 
 .itm2 {
     background-color: var(--white);
-
+    color: var(--second_color);
     padding-left: 20px;
     padding-top: 30px;
 }
@@ -97,7 +103,7 @@ body {
 }
 
 .itm3 {
-    background-color: var(--second_color);
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +115,7 @@ body {
 }
 
 .itm3:hover {
-    background-color: var(--black);
+    letter-spacing: 2px;
 }
 
 .item2_img {
@@ -184,6 +190,7 @@ body {
     font-family: var(--main_font);
     font-size: clamp(25px, 3vw, 30px);
     margin-bottom: 20px;
+    color: var(--white);
 }
 
 .promo2_bot button {
@@ -220,7 +227,7 @@ body {
 .event_content {
     width: 100vw;
     min-height: 80vh;
-    background-color: var(--second_color);
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +268,7 @@ body {
 }
 
 .event_left a:hover {
-    background-color: var(--black);
+    background-color: var(--second_color);
 }
 
 .person {
@@ -300,10 +307,12 @@ body {
     font-family: var(--main_font);
     font-size: clamp(30px, 4vw, 50px);
     margin-bottom: 5px;
+    color: var(--white);
 }
 
 .temoig_left p {
     margin-bottom: 30px;
+    color: var(--white);
 }
 
 .quote {
@@ -314,6 +323,7 @@ body {
     font-family: var(--main_font);
     font-size: clamp(30px, 3vw, 50px);
     margin-bottom: 20px;
+    color: var(--white);
 }
 
 .temoig_person {
@@ -324,6 +334,7 @@ body {
 .temoig_person h3 {
     font-family: var(--main_font);
     font-size: clamp(23px, 2vw, 30px);
+    color: var(--white);
 }
 
 @media (min-width: 800px) {

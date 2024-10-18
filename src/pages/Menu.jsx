@@ -29,7 +29,7 @@ const Main = () => {
                     <p>Rechercher un plat en tapant ses mots clés</p>
                     <form action="">
                         <input type="search" placeholder="Pondu, fufu, poisson salé" id="search" name="search" />
-                        <img src={loupe} alt="Loupe" className="loupe" />
+                        <i class='bx bx-search loupe' ></i>
                     </form>
                 </div>
 
@@ -48,7 +48,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +188,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardBot_right">
-                                    <img src={cart} className="cart" />
+                                    <i class='bx bx-cart cart' ></i>
                                 </div>
                             </div>
                         </div>

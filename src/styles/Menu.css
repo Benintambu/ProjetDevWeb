@@ -26,10 +26,12 @@
 .main_top h4 {
     font-family: var(--main_font);
     font-size: clamp(30px, 2.5vw, 40px);
+    color: var(--white2);
 }
 
 .main_top p {
     margin-bottom: 20px;
+    color: var(--white);
 }
 
 .main_top form {
@@ -42,15 +44,22 @@
     width: 100%;
     height: 70px;
     border: none;
-    padding-left: 40px;
+    padding-left: 50px;
     border-radius: 10px;
+    background-color: var(--black);
+    color: var(--white2);
+}
+
+.main_top form input::placeholder {
+    color: var(--white2);
 }
 
 .loupe {
     width: 20px;
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 25px;
+    color: var(--white);
 }
 
 .main_cards {
@@ -62,8 +71,13 @@
 
 .cards_item {
     padding: 10px 15px;
-    background-color: var(--white);
+    background-color: var(--black);
     border-radius: 10px;
+    transition: var(--trans);
+}
+
+.cards_item:hover {
+    transform: scale(1.03);
 }
 
 .card_top {
@@ -85,6 +99,7 @@
 .card_bot h2 {
     font-family: var(--main_font);
     margin-bottom: 15px;
+    color: var(--white);
 }
 
 .card_bot p,
@@ -93,6 +108,7 @@
     text-transform: capitalize;
     font-size: clamp(20px, 1.5vw, 30px);
     margin-bottom: 15px;
+    color: var(--white2);
 }
 
 .cardBot_bot {
@@ -141,7 +157,7 @@
 }
 
 .more_btn:hover {
-    background-color: var(--second_color);
+    background-color: var(--black);
 }
 
 @media (min-width: 660px) {

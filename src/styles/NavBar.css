@@ -53,6 +53,8 @@ nav {
 .cart {
     width: 30px;
     margin-right: 15px;
+    position: relative;
+    font-size: 30px;
 }
 
 .nav_links {
@@ -62,21 +64,18 @@ nav {
 .nav_links li a {
     margin-right: 30px;
     font-family: var(--main_font);
-    color: var(--second_color);
+    color: var(--white);
     font-size: 25px;
     position: relative;
     transition: var(--trans);
 }
 
-.nav_links li .active::after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: var(--primary_color);
-    border-radius: 50%;
-    position: absolute;
-    top: -5px;
-    right: -10px;
+.nav_links li .active {
+    color: var(--primary_color);
+}
+
+.nav_links li .active:hover {
+    color: var(--white2);
 }
 
 .nav_links li a:hover {
@@ -95,7 +94,7 @@ nav {
 .burger {
     width: 100%;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 @media (max-width: 800px) {

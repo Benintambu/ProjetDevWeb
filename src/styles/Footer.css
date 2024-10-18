@@ -1,19 +1,10 @@
-:root {
-    --primary_color: #cfbd97;
-    --second_color: #000;
-    --black: #1e1e1e;
-    --white: #fff;
-    --white2: #f5f5f5;
-    --main_font: "Echelon";
-    --trans: .3s ease;
-}
-
 footer {
     width: 100vw;
     height: 80vh;
     display: flex;
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--black);
+    color: var(--white) !important;
 }
 
 .footer_top {
@@ -39,21 +30,20 @@ footer {
     font-family: var(--main_font);
     font-size: clamp(25px, 2vw, 35px);
     margin-bottom: 10px;
-    color: var(--second_color);
     font-weight: 600;
 }
 
 .footerTop_container ul li a {
-    color: var(--second_color);
     font-family: var(--main_font);
     font-size: clamp(23px, 1.5vw, 30px);
+    color: var(--white) !important;
 }
 
 .footer_contact a {
     font-family: var(--main_font);
     font-size: clamp(30px, 2vw, 40px);
     text-decoration: underline;
-    color: var(--second_color);
+    color: var(--white) !important;
 }
 
 .footer_bot p {

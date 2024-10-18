@@ -21,7 +21,7 @@ const NavBar = () => {
 
                 <div className="nav_end">
                     <Link to="/cart">
-                        <img src={cart} alt="Panier" className="cart" />
+                        <i class='bx bxs-cart-alt cart'></i>
                     </Link>
                     <div className="profil_container">
                         <Link to="/profil">
