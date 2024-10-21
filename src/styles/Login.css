@@ -169,7 +169,7 @@ form p {
     color: var(--white);
 }
 
-@media (max-width: 740px) {
+@media (max-width: 834px) {
     .right_item {
         display: none;
     }

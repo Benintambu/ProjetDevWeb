@@ -62,6 +62,74 @@
     color: var(--white);
 }
 
+.menu_jour {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.menu_jour img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.menu_opacity {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.menuDuJour_content {
+    z-index: 100;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.menuDuJour_content h3 {
+    font-family: var(--main_font);
+    color: var(--white2);
+    font-size: clamp(19px, 2vw, 35px);
+}
+
+.menuDuJour_content h2 {
+    font-family: var(--main_font);
+    color: var(--white);
+    font-size: clamp(30px, 4vw, 50px);
+}
+
+.menuDuJour_content h5 {
+    color: var(--white2);
+    font-size: clamp(20px, 1.5vw, 31px);
+}
+
+.menuDuJour_content button {
+    background-color: var(--primary_color);
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    font-family: var(--main_font);
+    text-transform: capitalize;
+    font-size: clamp(20px, 1.5vw, 30px);
+    transition: var(--trans);
+    cursor: pointer;
+}
+
+.menuDuJour_content button:hover {
+    background-color: var(--black);
+}
+
 .main_cards {
     display: grid;
     width: 100%;

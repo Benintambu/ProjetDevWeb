@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import gsap from 'gsap'; // <-- import GSAP
+import { useGSAP } from "@gsap/react";
 import '../styles/Home.css';
 import Footer from "../components/Footer";
 import profil from '../assets/img/Profil.jpg'
-import plat1 from '../assets/img/plat1.png';
+import plat1 from '../assets/img/top-view-table-full-delicious-food-composition.jpg';
 import NavBar from "../components/NavBar";
 import plat2 from '../assets/img/plat2.jpg';
 import eventImg from '../assets/img/people.png';
@@ -43,9 +45,10 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div className="item1_right">
-                            <img src={plat1} alt="Nourriture" className="hero_food" />
-                        </div>
+                        <img src={plat1} alt="Nourriture" className="hero_food" />
+
+                        <div className="itm1_opacity"></div>
+
                     </div>
                     <div className="hero_item itm2">
                         <h3>Nom du plat</h3>

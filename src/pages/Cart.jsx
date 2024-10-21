@@ -30,6 +30,7 @@ const CartMain = () => {
                 <div className="cart_histo">
                     <p>Total des articles: <span>4</span></p>
                     <p>Prix total: <span>40000</span>Fc</p>
+                    <button>Valider</button>
                 </div>
 
                 <div className="histo_container">

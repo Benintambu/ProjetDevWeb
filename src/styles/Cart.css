@@ -39,6 +39,20 @@
     border-radius: 10px;
 }
 
+.cart_histo button {
+    background-color: var(--primary_color);
+    border: none;
+    padding: 10px 20px;
+    color: var(--white);
+    transition: var(--trans);
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.cart_histo button:hover {
+    background-color: var(--second_color);
+}
+
 .bx-chevron-down,
 .bx-chevron-up {
     color: var(--white);
@@ -127,7 +141,7 @@
 }
 
 .fleche {
-    width: 17px;
+    width: 17px !important;
     cursor: pointer;
 }
 
@@ -141,4 +155,8 @@
 
 .bot_right p {
     padding-top: 15px;
+}
+
+.histoRight_top img {
+    width: 20px;
 }

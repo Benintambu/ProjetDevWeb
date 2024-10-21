@@ -1,0 +1,108 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease-in;
+}
+
+.container_profil {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main_profil {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.mainProfil_cont {
+    width: 90vw;
+    height: 88vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainProfil_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.mainProfil_img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.mainProfil_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.mainProfil_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainProfil_text h2 {
+    color: var(--white);
+    font-size: clamp(21px, 3vw, 50px);
+    font-family: var(--main_font);
+}
+
+.mainProfil_text p {
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.mainProfil_text a {
+    padding: 12px 24px;
+    background-color: var(--primary_color);
+    color: var(--white);
+    font-family: var(--main_font);
+    font-size: clamp(23px, 2vw, 40px);
+    transition: var(--trans);
+}
+
+.mainProfil_text a:hover {
+    background-color: var(--black);
+}
+
+.mainProfil_right {
+    width: auto;
+}
+
+.profil_ico {
+    position: relative;
+    margin-right: 10px;
+}
+
+.mainProfil_right h4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.mainProfil_right p {
+    font-family: var(--main_font);
+    font-size: clamp(25px, 4vw, 40px);
+}
