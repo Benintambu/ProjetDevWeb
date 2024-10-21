@@ -1,0 +1,117 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease;
+}
+
+.modif_profil {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main_modif {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modifProfil_cont {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modif_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profil_tof {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profil_tof img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.modif_left input {
+    display: none;
+}
+
+.modif_left label {
+    color: var(--white);
+    font-size: clamp(23px, 2vw, 40px);
+    background-color: var(--primary_color);
+    font-family: var(--main_font);
+    padding: 12px 24px;
+    transition: var(--trans);
+    cursor: pointer;
+}
+
+.modif_left label:hover {
+    background-color: var(--black);
+}
+
+.modif_right {
+    width: 40%;
+}
+
+.modif_right form {
+    display: grid;
+    gap: 10px;
+}
+
+.modif_right form input {
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--white2);
+    font-size: 21px;
+    color: var(--white);
+}
+
+.modif_right form input::placeholder {
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 21px;
+}
+
+.modif_right form button {
+    background-color: var(--primary_color);
+    color: var(--white);
+    font-family: var(--main_font);
+    height: 60px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: var(--trans);
+}
+
+.modif_right form button:hover {
+    background-color: var(--black);
+}
+
+.modif_right h3 {
+    color: var(--white);
+    font-family: var(--main_font);
+    font-size: clamp(25px, 3vw, 45px);
+}

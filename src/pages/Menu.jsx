@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/Menu.css';
 import NavBar from "../components/NavBar";
-import loupe from '../assets/img/chercher.png'
 import plat1 from '../assets/img/top-view-table-full-delicious-food-composition.jpg';
 import plate from '../assets/img/plat4.png'
 import cart from '../assets/img/panier.png'

@@ -9,6 +9,7 @@ import Menu from './pages/Menu';
 import Profil from './pages/Profil';
 import Cart from './pages/Cart';
 import Contact from './pages/Contact';
+import ModifProfil from './pages/ModifProfil';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/profil' element={<Profil />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/modifProfil' element={<ModifProfil />}></Route>
       </Routes>
     </Router>
   );

@@ -31,7 +31,7 @@ const MainProfil = () => {
                     <div className="mainProfil_text">
                         <h2>Isaac Ngangu</h2>
                         <p>100 Points de fidélité</p>
-                        <Link to='/'>Modifier le profil</Link>
+                        <Link to='/modifProfil'>Modifier le profil</Link>
                     </div>
                 </div>
 
