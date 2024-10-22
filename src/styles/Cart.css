@@ -160,3 +160,17 @@
 .histoRight_top img {
     width: 20px;
 }
+
+@media (max-width: 540px) {
+    .histo_left {
+        flex-direction: column;
+    }
+
+    .histo_item {
+        padding: 0 5px;
+    }
+
+    .histo_img img {
+        width: 60%;
+    }
+}

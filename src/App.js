@@ -10,6 +10,7 @@ import Profil from './pages/Profil';
 import Cart from './pages/Cart';
 import Contact from './pages/Contact';
 import ModifProfil from './pages/ModifProfil';
+import Histo from './pages/Histo';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/cart' element={<Cart />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/modifProfil' element={<ModifProfil />}></Route>
+        <Route path='/histo' element={<Histo />}></Route>
       </Routes>
     </Router>
   );

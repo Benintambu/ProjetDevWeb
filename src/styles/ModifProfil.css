@@ -115,3 +115,35 @@
     font-family: var(--main_font);
     font-size: clamp(25px, 3vw, 45px);
 }
+
+@media (max-width: 1070px) {
+    .modifProfil_cont {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main_modif {
+        overflow: scroll;
+    }
+
+    .modif_left {
+        margin-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .modif_right {
+        width: 100%;
+
+    }
+
+    .profil_tof {
+        width: 150px;
+        height: 150px;
+    }
+
+    .modif_right form input,
+    .modif_right form input::placeholder {
+        font-size: clamp(13px, 0.5vw, 17px);
+    }
+
+}

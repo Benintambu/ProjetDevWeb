@@ -106,3 +106,25 @@
     font-family: var(--main_font);
     font-size: clamp(25px, 4vw, 40px);
 }
+
+@media (max-width: 600px) {
+    .mainProfil_cont {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .mainProfil_left {
+        margin-bottom: 15px;
+    }
+
+    .mainProfil_text {
+        display: flex;
+        align-items: start;
+    }
+
+    .mainProfil_img {
+        width: 80px;
+        height: 80px;
+    }
+}

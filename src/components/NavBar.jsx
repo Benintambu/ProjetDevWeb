@@ -57,7 +57,7 @@ const NavBar = () => {
                             <img src={profil} alt="Profil" className="profil" />
                             <ul>
                                 <li><Link to='/profil'>Votre profil</Link></li>
-                                <li><Link>Historique</Link></li>
+                                <li><Link to='/histo'>Historique</Link></li>
                                 <li><Link>Reclamation</Link></li>
                                 <li><Link>Parrainage</Link></li>
                                 <li><Link to='/'>Déconnexion</Link></li>
