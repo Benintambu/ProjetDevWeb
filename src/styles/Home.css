@@ -111,6 +111,10 @@ body {
     color: var(--second_color);
     padding-left: 20px;
     padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .itm2 h3 {

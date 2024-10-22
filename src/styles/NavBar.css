@@ -60,14 +60,6 @@ nav {
     transition: var(--trans);
 }
 
-.nav_links li .active {
-    color: var(--primary_color);
-}
-
-.nav_links li .active:hover {
-    color: var(--white2);
-}
-
 .nav_links li a:hover {
     color: var(--primary_color);
 }
@@ -160,7 +152,7 @@ nav {
 }
 
 .navMobile_links ul li a {
-    font-size: 60px;
+    font-size: 40px;
     font-family: var(--main_font);
     color: var(--white);
 }

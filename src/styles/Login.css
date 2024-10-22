@@ -162,7 +162,7 @@ form p {
 }
 
 .sign p a:hover {
-    color: var(--second_color);
+    color: var(--white);
 }
 
 .forgot {

@@ -14,6 +14,10 @@ export default function Footer() {
                             <li><Link to='/home'>Accueil</Link></li>
                             <li><Link to='/menu'>Menu</Link></li>
                             <li><Link to='/event'>Jeux Et Evénements</Link></li>
+                            <li><Link to='/profil'>Profil</Link></li>
+                            <li><Link to='/event'>Historique</Link></li>
+                            <li><Link to='/event'>Parrainage</Link></li>
+                            <li><Link to='/event'>Déconnexion</Link></li>
                         </ul>
                     </div>
 

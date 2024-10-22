@@ -58,8 +58,7 @@ const NavBar = () => {
                             <ul>
                                 <li><Link to='/profil'>Votre profil</Link></li>
                                 <li><Link to='/histo'>Historique</Link></li>
-                                <li><Link>Reclamation</Link></li>
-                                <li><Link>Parrainage</Link></li>
+                                <li><Link to='/parr'>Parrainage</Link></li>
                                 <li><Link to='/'>Déconnexion</Link></li>
                             </ul>
                         </div>
@@ -95,7 +94,10 @@ const NavBar = () => {
                                 <li><Link to="/home" className="active">Accueil</Link></li>
                                 <li><Link to="/menu">Menu</Link></li>
                                 <li><Link to="/event">Evénements</Link></li>
+                                <li><Link to='/histo'>Historique</Link></li>
+                                <li><Link to='/parr'>Parrainage</Link></li>
                                 <li><Link to="/contact">Contactez-nous</Link></li>
+                                <li><Link to='/'>Déconnexion</Link></li>
                             </ul>
                         </div>
 

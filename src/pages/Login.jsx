@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/Login.css';
-import Signin from "./Signin";
+import Signin from "./SignIn";
 import Home from "./Home";
 import logo from '../assets/img/logo Zeduc.png'
 
