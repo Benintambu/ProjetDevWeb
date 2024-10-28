@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login'
@@ -12,6 +11,9 @@ import Contact from './pages/Contact';
 import ModifProfil from './pages/ModifProfil';
 import Histo from './pages/Histo';
 import Parr from './pages/Parr';
+import Promo from './pages/Promo';
+import AdminLogin from './pages/AdminLogin';
+import AdminMenu from './pages/AdminMenu';
 
 
 function App() {
@@ -29,6 +31,9 @@ function App() {
         <Route path='/modifProfil' element={<ModifProfil />}></Route>
         <Route path='/histo' element={<Histo />}></Route>
         <Route path='/parr' element={<Parr />}></Route>
+        <Route path='/promo' element={<Promo />}></Route>
+        <Route path='/admin_log' element={<AdminLogin />}></Route>
+        <Route path='/admin_menu' element={<AdminMenu />}></Route>
       </Routes>
     </Router>
   );

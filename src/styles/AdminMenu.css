@@ -1,0 +1,123 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease-in;
+}
+
+.adminMenu_cont {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.adm_menu {
+    width: 100vw;
+    height: 200vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.admMenu_container {
+    width: 90vw;
+    height: auto;
+    padding-top: 80px;
+    color: var(--white);
+}
+
+.admMenu_container h3 {
+    font-family: var(--main_font);
+    font-size: clamp(25px, 3vw, 60px);
+    margin-bottom: 25px;
+}
+
+.admMenu_img {
+    width: 100px;
+    height: 80px;
+}
+
+.admMenu_img img {
+    width: 120px;
+    height: 80px;
+    border-radius: .5rem;
+}
+
+.adMenu_plates {
+    width: 100%;
+    background-color: var(--black);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.plate_cont {
+    display: grid;
+    width: 100%;
+    gap: 15px;
+}
+
+.adMenu_name {
+    margin-left: 35px;
+}
+
+.adMenu_button {
+    padding: 8px 10px;
+    background-color: var(--primary_color);
+    border: none;
+    border-radius: .5rem;
+    font-size: 13px;
+    color: var(--white);
+    transition: var(--trans);
+}
+
+.adMenu_but {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.adMenu_button:hover {
+    background-color: var(--second_color);
+}
+
+.but_del {
+    margin-left: 10px;
+    background-color: var(--second_color);
+    cursor: pointer;
+}
+
+.but_del:hover {
+    background-color: var(--primary_color);
+}
+
+@media (max-width: 400px) {
+    .adMenu_plates {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: auto !important;
+
+    }
+
+    .adMenu_name {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .admMenu_img {
+        width: 100%;
+        margin-bottom: 120px;
+    }
+
+    .admMenu_img img {
+        width: 100%;
+        height: 180px;
+    }
+}
