@@ -52,7 +52,7 @@ export default function SideBarAdm() {
                             <Link className="side_link" to=''>Promo</Link>
                             <Link className="side_link" to='/admin_empl'>Employés</Link>
                             <Link className="side_link">Stats</Link>
-                            <Link className="side_link">Réclamations</Link>
+                            <Link className="side_link" to='/admin_recl'>Réclamations</Link>
                         </div>
                         <div className="sideBot_bot">
                             <Link className="side_link" to='/admin_log'>Déconnexion</Link>

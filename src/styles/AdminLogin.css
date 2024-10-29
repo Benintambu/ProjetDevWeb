@@ -22,11 +22,17 @@
 
 .adminLogin_right,
 .adminLogin_left {
-    width: 50%;
     height: 100%;
 }
 
+.adminLogin_right {
+    width: 60%;
+}
+
+
+
 .adminLogin_left {
+    width: 40%;
     padding: 15px 25px;
 }
 
