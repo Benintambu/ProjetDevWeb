@@ -48,9 +48,9 @@ export default function SideBarAdm() {
 
                     <div className="sideBar_bot">
                         <div className="sideBot_top">
-                            <Link className="side_link side_active">Menu</Link>
-                            <Link className="side_link">Promo</Link>
-                            <Link className="side_link">Employés</Link>
+                            <Link className="side_link side_active" to='/admin_menu'>Menu</Link>
+                            <Link className="side_link" to=''>Promo</Link>
+                            <Link className="side_link" to='/admin_empl'>Employés</Link>
                             <Link className="side_link">Stats</Link>
                             <Link className="side_link">Réclamations</Link>
                         </div>

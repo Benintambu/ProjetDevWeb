@@ -97,6 +97,24 @@
     background-color: var(--primary_color);
 }
 
+.add_plate {
+    border: none;
+    background-color: var(--primary_color);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-size: 25px;
+    position: fixed;
+    bottom: 5%;
+    color: var(--white);
+    right: 5%;
+    transition: var(--trans);
+}
+
+.add_plate:hover {
+    background-color: var(--black);
+}
+
 @media (max-width: 400px) {
     .adMenu_plates {
         display: flex;

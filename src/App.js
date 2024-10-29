@@ -14,6 +14,8 @@ import Parr from './pages/Parr';
 import Promo from './pages/Promo';
 import AdminLogin from './pages/AdminLogin';
 import AdminMenu from './pages/AdminMenu';
+import AdminPlate from './pages/AdminPlate';
+import AdminEmpl from './pages/AdminEmpl';
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
         <Route path='/promo' element={<Promo />}></Route>
         <Route path='/admin_log' element={<AdminLogin />}></Route>
         <Route path='/admin_menu' element={<AdminMenu />}></Route>
+        <Route path='/admin_plate' element={<AdminPlate />}></Route>
+        <Route path='/admin_empl' element={<AdminEmpl />}></Route>
       </Routes>
     </Router>
   );
