@@ -7,6 +7,21 @@ import logo from '../assets/img/logo Zeduc.png'
 
 
 export default function Login() {
+    const password = document.getElementById('password');
+
+    function showPassword() {
+        const showbtn = document.querySelector('.show_log');
+
+        if (password.type === "password") {
+            password.type = "text";
+            showbtn.classList.add('bxs-hide');
+        } else {
+            password.type = "password";
+            showbtn.classList.remove('bxs-hide');
+        }
+
+    }
+
     return (
         <div className="container">
             <div className="left_item">
@@ -26,7 +41,7 @@ export default function Login() {
 
                         <div className="input_item">
                             <input type="password" name="password" id="password" placeholder="password" required />
-                            <i class='bx bxs-show eye'></i>
+                            <i class='bx bxs-show eye show_log' onClick={showPassword}></i>
                         </div>
                     </div>
 

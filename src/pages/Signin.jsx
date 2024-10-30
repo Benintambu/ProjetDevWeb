@@ -4,6 +4,21 @@ import { Link } from "react-router-dom";
 import logo from '../assets/img/logo Zeduc.png'
 
 export default function SignIn() {
+    const password = document.getElementById('password');
+
+    function showPassword() {
+        const showbtn = document.querySelector('.show_sign');
+
+        if (password.type === "password") {
+            password.type = "text";
+            showbtn.classList.add('bxs-hide');
+        } else {
+            password.type = "password";
+            showbtn.classList.remove('bxs-hide');
+        }
+
+    }
+
     return (
         <div className="sign_container">
             <div className="sign_content">
@@ -45,7 +60,7 @@ export default function SignIn() {
 
                             <div className="item_input">
                                 <input type="password" name="password" id="password" placeholder="Mot de passe" required />
-                                <i class='bx bxs-show eye ico'></i>
+                                <i class='bx bxs-show eye ico show_sign' onClick={showPassword}></i>
                             </div>
 
                             <div className="item_input">
@@ -87,3 +102,4 @@ export default function SignIn() {
         </div>
     )
 }
+
