@@ -49,4 +49,4 @@ function AdminMin() {
 const employes = [
     { id: 1, firstName: "Béni", lastName: "Ntambu", image: image1 },
     { id: 2, firstName: "Evodie", lastName: "Santimi", image: image2 },
-]
+] 

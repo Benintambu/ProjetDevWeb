@@ -1,0 +1,87 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease-in;
+}
+
+.admnRecl_mess {
+    width: 100vw;
+    color: var(--white);
+}
+
+.admin_mess {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.adMessTop_img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 0;
+    margin-right: 15px;
+}
+
+.adMessTop_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.admMain_mess {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.adMess_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.adMess_mid span {
+    margin-bottom: 20px;
+    color: var(--white2);
+}
+
+.adMess_mid h3 {
+    font-size: clamp(23px, 2vw, 50px);
+    padding-top: 7px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--white2);
+}
+
+.adMess_mid p {
+    padding-top: 30px;
+}
+
+.adMess_mid {
+    margin-bottom: 60px;
+}
+
+.adMess_bot a {
+    padding: 16px 34px;
+    border: 1px solid var(--white);
+    border-radius: .5rem;
+    color: var(--white);
+    transition: var(--trans);
+}
+
+.adMess_bot a:hover {
+    background-color: var(--primary_color);
+    border-color: var(--primary_color);
+}

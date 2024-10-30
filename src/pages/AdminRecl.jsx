@@ -17,7 +17,7 @@ export default function AdminRecl() {
 
 function AdminMin() {
     const reclamation = (reclamations.map(reclam =>
-        <Link className="adMenu_plates empl_link">
+        <Link className="adMenu_plates empl_link" to='/admin_rec_mess'>
             <div className="admMenu_img" key={reclam.id}>
                 <img src={reclam.image} alt="" key={reclam.id} />
             </div>

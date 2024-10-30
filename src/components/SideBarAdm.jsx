@@ -51,7 +51,7 @@ export default function SideBarAdm() {
                             <Link className="side_link side_active" to='/admin_menu'>Menu</Link>
                             <Link className="side_link" to=''>Promo</Link>
                             <Link className="side_link" to='/admin_empl'>Employés</Link>
-                            <Link className="side_link">Stats</Link>
+                            <Link className="side_link" to='/admin_stats'>Stats</Link>
                             <Link className="side_link" to='/admin_recl'>Réclamations</Link>
                         </div>
                         <div className="sideBot_bot">

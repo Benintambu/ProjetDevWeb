@@ -1,0 +1,101 @@
+/* Structure de base */
+.App {
+    display: flex;
+}
+
+/* Styles de la barre latérale */
+.sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.menu-item.selected {
+    background-color: #d9a15b;
+}
+
+/* Styles du tableau de bord */
+.dashboard {
+    padding: 20px;
+    background-color: red;
+    width: 90vw;
+    color: #fff;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stats-section,
+.orders-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-card {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Styles de la carte des statistiques */
+.statistics-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    font-size: 1.5rem;
+    color: #d9a15b;
+}
+
+.legend {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.AdminStats {
+    display: flex;
+}
