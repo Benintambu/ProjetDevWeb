@@ -9,7 +9,7 @@ export default function SignIn() {
             <div className="sign_content">
                 <div className="sign_left">
                     <div className="left_top">
-                        <h1><Link to="/home"><img src={logo} className="logo" /></Link></h1>
+                        <h1><Link to="/home"><img src={logo} className="logo sign_logo" /></Link></h1>
                     </div>
 
                     <form action="/home" className="insc_form">
@@ -49,9 +49,27 @@ export default function SignIn() {
                             </div>
 
                             <div className="item_input">
-                                <input type="password" name="confirm_pass" id="confirm_pass" placeholder="Mot de passe" required />
-                                <i class='bx bxs-show eye ico'></i>
+                                <input type="date" name="birth" id="birth" required />
                             </div>
+
+                            <div className="item_input">
+                                <div className="itemInput_choice">
+                                    <label htmlFor="female">
+                                        F
+                                    </label>
+                                    <input type="radio" name="sexe" id="female" />
+
+                                </div>
+
+                                <div className="itemInput_choice">
+                                    <label htmlFor="male">
+                                        M
+                                    </label>
+                                    <input type="radio" name="sexe" id="male" />
+
+                                </div>
+                            </div>
+
                         </div>
 
                         <button type="submit">Valider</button>

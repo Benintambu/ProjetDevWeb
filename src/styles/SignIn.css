@@ -33,7 +33,6 @@
     top: 23%;
     right: 1%;
     font-size: 19px;
-    ;
 }
 
 .sign_left {
@@ -62,6 +61,7 @@
 .container_input {
     display: grid;
     width: 100%;
+    gap: 10px;
 }
 
 .insc_form {
@@ -79,7 +79,6 @@
     border: none;
     color: var(--white);
     padding: 5px 10px;
-    margin-bottom: 10px;
     border-radius: .5rem;
 }
 
@@ -107,7 +106,7 @@
 
 .form_signIn p {
     font-family: "Poppins";
-    font-size: clamp(18px, 0.5vw, 20px);
+    font-size: clamp(14px, 0.1vw, 16px);
 }
 
 .form_signIn p a {
@@ -117,6 +116,20 @@
 
 .form_signIn p a:hover {
     color: var(--white);
+}
+
+.itemInput_choice {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.itemInput_choice input {
+    height: auto;
+}
+
+.sign_logo {
+    width: 70px !important;
 }
 
 @media (max-width: 740px) {

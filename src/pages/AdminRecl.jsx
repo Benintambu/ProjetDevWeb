@@ -37,7 +37,7 @@ function AdminMin() {
     return (
         <main className="adm_menu">
             <div className="admMenu_container">
-                <h3>Menu du jour</h3>
+                <h3>Réclamations</h3>
 
                 <div className="plate_cont">{reclamation}</div>
             </div>
