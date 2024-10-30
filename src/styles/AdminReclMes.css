@@ -47,7 +47,7 @@
     padding-top: 80px;
 }
 
-.adMess_top {
+.adMessTop_profil {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
@@ -84,4 +84,13 @@
 .adMess_bot a:hover {
     background-color: var(--primary_color);
     border-color: var(--primary_color);
+}
+
+.admiRec_ret {
+    position: relative !important;
+    font-size: 30px;
+    padding: 10px 20px;
+    border: 1px solid var(--white);
+    margin-bottom: 20px;
+    border-radius: .5rem;
 }

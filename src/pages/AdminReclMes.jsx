@@ -23,10 +23,14 @@ function AdmMainMess() {
     return (
         <div className="admin_mess">
             <div className="adMess_top">
-                <div className="adMessTop_img">
-                    <img src={user.userImg} alt="" />
+                <Link to='/admin_recl'><i class='bx bx-chevron-left admiRec_ret'></i></Link>
+
+                <div className="adMessTop_profil">
+                    <div className="adMessTop_img">
+                        <img src={user.userImg} alt="" />
+                    </div>
+                    <h2>{user.firstName} {user.lastName}</h2>
                 </div>
-                <h2>{user.firstName} {user.lastName}</h2>
             </div>
 
             <div className="adMess_mid">
