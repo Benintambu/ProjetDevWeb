@@ -14,11 +14,13 @@ import Parr from './pages/Parr';
 import Promo from './pages/Promo';
 import AdminLogin from './pages/AdminLogin';
 import AdminMenu from './pages/AdminMenu';
-import AdminPlate from './pages/AdminPlate';
+import AdmCreaPlateMain from './pages/AdminCreaPlate';
 import AdminEmpl from './pages/AdminEmpl';
 import AdminRecl from './pages/AdminRecl';
 import AdminStats from './pages/AdminStats';
 import AdminReclMes from './pages/AdminReclMes';
+import AdminModPlate from './pages/AdminModPlate';
+import AdminAddEmpl from './pages/AdminAddEmpl';
 
 
 function App() {
@@ -39,11 +41,13 @@ function App() {
         <Route path='/promo' element={<Promo />}></Route>
         <Route path='/admin_log' element={<AdminLogin />}></Route>
         <Route path='/admin_menu' element={<AdminMenu />}></Route>
-        <Route path='/admin_plate' element={<AdminPlate />}></Route>
+        <Route path='/admin_plate' element={<AdmCreaPlateMain />}></Route>
         <Route path='/admin_empl' element={<AdminEmpl />}></Route>
         <Route path='/admin_recl' element={<AdminRecl />}></Route>
         <Route path='/admin_stats' element={<AdminStats />}></Route>
         <Route path='/admin_rec_mess' element={<AdminReclMes />}></Route>
+        <Route path='/admin_mod_plat' element={<AdminModPlate />}></Route>
+        <Route path='/admin_add_empl' element={<AdminAddEmpl />}></Route>
       </Routes>
     </Router>
   );

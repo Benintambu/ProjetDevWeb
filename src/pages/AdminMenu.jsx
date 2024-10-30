@@ -25,7 +25,7 @@ function AdminMin() {
                 <h4 key={plat.id}>{plat.name}</h4>
                 <h5>Prix: {plat.price}</h5>
                 <div className="adMenu_but">
-                    <Link className="adMenu_button">Modifier</Link>
+                    <Link className="adMenu_button" to='/admin_mod_plat'>Modifier</Link>
                     <button className="adMenu_button but_del">Supprimer</button>
                 </div>
             </div>

@@ -7,9 +7,8 @@ import logo from '../assets/img/logo Zeduc.png'
 
 
 export default function Login() {
-    const password = document.getElementById('password');
-
     function showPassword() {
+        const password = document.getElementById('password');
         const showbtn = document.querySelector('.show_log');
 
         if (password.type === "password") {

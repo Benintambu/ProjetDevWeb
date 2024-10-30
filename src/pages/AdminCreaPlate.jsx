@@ -1,29 +1,53 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SideBarAdm from "../components/SideBarAdm";
-import '../styles/AdminPlate.css';
+import '../styles/AdminCreaPlate.css';
 import admiImg from '../assets/img/add_img.png'
 
 export default function AdminPlate() {
     return (
         <div className="admnPlate_cont">
             <SideBarAdm />
-            <AdmPlateMain />
+            <AdmCreaPlateMain />
         </div>
     );
 }
 
-function AdmPlateMain() {
+function AdmCreaPlateMain() {
+    const profilePicRef = useRef(null);
+    const inputProfilRef = useRef(null);
+
+    useEffect(() => {
+        const inputProfil = inputProfilRef.current;
+        const profilePic = profilePicRef.current;
+
+        if (inputProfil) {
+            inputProfil.onchange = function () {
+                profilePic.src = URL.createObjectURL(inputProfil.files[0]);
+            };
+        }
+
+        return () => {
+            if (inputProfil) {
+                inputProfil.onchange = null; // Nettoie l'événement
+            }
+        };
+    }, []);
+
     return (
         <main className="admPlate_main">
             <div className="admPlate_container">
                 <h3>Ajouter un plat</h3>
                 <form action="">
                     <div className="admForm_right">
-                        <input type="file" name="photo" id="photo" />
-                        <label htmlFor="photo">
-                            <img src={admiImg} alt="Image" />
+                        <input type="file" name="photo" id="photo" ref={inputProfilRef} />
+                        <label htmlFor="photo" >
+                            Ajouter une photo
                         </label>
+
+                        <div className="admniRight_img">
+                            <img src={admiImg} alt="Image" id="profil_pic" className="profil_pic" ref={profilePicRef} />
+                        </div>
                     </div>
 
                     <div className="admForm_left">

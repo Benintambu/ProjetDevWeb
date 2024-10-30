@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from '../assets/img/logo Zeduc.png'
 
 export default function SignIn() {
-    const password = document.getElementById('password');
+    var password = document.getElementById('password');
 
     function showPassword() {
         const showbtn = document.querySelector('.show_sign');

@@ -37,7 +37,7 @@ function AdminMin() {
     return (
         <main className="adm_menu">
             <div className="admMenu_container">
-                <Link className="add_plate" to=''>+</Link>
+                <Link className="add_plate" to='/admin_add_empl'>+</Link>
                 <h3>Vos employés</h3>
 
                 <div className="plate_cont">{employe}</div>
