@@ -27,6 +27,7 @@ import EmploMenu from './pages/EmploMenu';
 import EmploRecl from './pages/EmploRecla';
 import EmploReclMes from './pages/EmploReclMes';
 import EmploStats from './pages/EmploStats';
+import GerComm from './pages/GerComm';
 
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
         <Route path='/emplo_recl' element={<EmploRecl />}></Route>
         <Route path='/emplo_recl_mes' element={<EmploReclMes />}></Route>
         <Route path='/emplo_stats' element={<EmploStats />}></Route>
+        <Route path='/ger_comm' element={<GerComm />}></Route>
       </Routes>
     </Router>
   );
