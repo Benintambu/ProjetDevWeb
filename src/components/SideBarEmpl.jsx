@@ -8,7 +8,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 
-export default function SideBarAdm() {
+export default function SideBarEmpl() {
     const container = useRef(null);
     const animationRef = useRef(null);
 
@@ -49,11 +49,11 @@ export default function SideBarAdm() {
                     <div className="sideBar_bot">
                         <div className="sideBot_top">
                             <Link className="side_link side_active" to='/admin_menu'>Menu</Link>
-                            <Link className="side_link" to='/admin_stats'>Stats</Link>
-                            <Link className="side_link" to='/admin_recl'>Réclamations</Link>
+                            <Link className="side_link" to='/emplo_stats'>Stats</Link>
+                            <Link className="side_link" to='/emplo_recl'>Réclamations</Link>
                         </div>
                         <div className="sideBot_bot">
-                            <Link className="side_link" to='/admin_log'>Déconnexion</Link>
+                            <Link className="side_link" to='/emplo_log'>Déconnexion</Link>
                         </div>
                     </div>
                 </div>

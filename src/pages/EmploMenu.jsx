@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import '../styles/AdminMenu.css'
 import '../styles/EmploMenu.css'
-import SideBarAdm from "../components/SideBarEmpl";
+import SideBarEmpl from "../components/SideBarEmpl";
 import image1 from '../assets/img/grilled-steak-fillet-with-fresh-vegetable-salad-generated-by-ai.jpg';
 import image2 from '../assets/img/img_promo.jpg';
 
@@ -65,7 +65,7 @@ function EmploMenu() {
 
     return (
         <div className="adminMenu_cont">
-            <SideBarAdm />
+            <SideBarEmpl />
             <div className="update_menu">
                 <EmplCont />
                 <form action="/emplo_menu" className="upDate_form">
@@ -99,7 +99,7 @@ function UpdatePlate({ checked, onCheck }) {
     )
 }
 
-const plates = [
+let plates = [
     { id: 1, name: "Pondu", price: 5000, description: "Plat de pondu", image: image1 },
     { id: 2, name: "Madesu", price: 7000, description: "Plat de Madesu", image: image2 },
 ]

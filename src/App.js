@@ -24,6 +24,10 @@ import AdminAddEmpl from './pages/AdminAddEmpl';
 import AdmiModEmpl from './pages/AdmiModEmpl';
 import EmploLogin from './pages/EmploLogin';
 import EmploMenu from './pages/EmploMenu';
+import EmploRecl from './pages/EmploRecla';
+import EmploReclMes from './pages/EmploReclMes';
+import EmploStats from './pages/EmploStats';
+
 
 function App() {
   return (
@@ -53,6 +57,9 @@ function App() {
         <Route path='/admin_mod_empl' element={<AdmiModEmpl />}></Route>
         <Route path='/emplo_log' element={<EmploLogin />}></Route>
         <Route path='/emplo_menu' element={<EmploMenu />}></Route>
+        <Route path='/emplo_recl' element={<EmploRecl />}></Route>
+        <Route path='/emplo_recl_mes' element={<EmploReclMes />}></Route>
+        <Route path='/emplo_stats' element={<EmploStats />}></Route>
       </Routes>
     </Router>
   );

@@ -1,0 +1,35 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease-in;
+}
+
+.emplStat_main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding-top: 80px;
+}
+
+.emplStats_cont {
+    width: 90vw;
+}
+
+.emplStats_cont h3 {
+    font-size: clamp(20px, 2vw, 30px);
+    margin-bottom: 25px;
+}
+
+.stats_emplo {
+    background-color: var(--black);
+    width: 100%;
+    padding: 30px 15px;
+    border-radius: .5rem;
+    margin-bottom: 20px;
+}
