@@ -22,7 +22,8 @@ import AdminReclMes from './pages/AdminReclMes';
 import AdminModPlate from './pages/AdminModPlate';
 import AdminAddEmpl from './pages/AdminAddEmpl';
 import AdmiModEmpl from './pages/AdmiModEmpl';
-
+import EmploLogin from './pages/EmploLogin';
+import EmploMenu from './pages/EmploMenu';
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
         <Route path='/admin_mod_plat' element={<AdminModPlate />}></Route>
         <Route path='/admin_add_empl' element={<AdminAddEmpl />}></Route>
         <Route path='/admin_mod_empl' element={<AdmiModEmpl />}></Route>
+        <Route path='/emplo_log' element={<EmploLogin />}></Route>
+        <Route path='/emplo_menu' element={<EmploMenu />}></Route>
       </Routes>
     </Router>
   );
