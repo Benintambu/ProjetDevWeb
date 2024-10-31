@@ -49,8 +49,9 @@ export default function SideBarGer() {
                     <div className="sideBar_bot">
                         <div className="sideBot_top">
                             <Link className="side_link side_active" to='/ger_comm'>Commandes</Link>
-                            <Link className="side_link" to='/emplo_stats'>Stats</Link>
-                            <Link className="side_link" to='/emplo_recl'>Réclamations</Link>
+                            {/*                             <Link className="side_link" to='/emplo_stats'>Stats</Link>
+ */}                            <Link className="side_link" to='/ger_emply'>Employés</Link>
+                            <Link className="side_link" to='/ger_recl'>Réclamations</Link>
                         </div>
                         <div className="sideBot_bot">
                             <Link className="side_link" to='/emplo_log'>Déconnexion</Link>
