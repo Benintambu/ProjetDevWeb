@@ -27,7 +27,7 @@ function AdminMin() {
                     <h4 key={personnel.id}>{personnel.lastName}</h4>
                 </div>
                 <div className="adMenu_but">
-                    <Link className="adMenu_button">Modifier</Link>
+                    <Link className="adMenu_button" to='/admin_mod_empl'>Modifier</Link>
                     <button className="adMenu_button but_del">Supprimer</button>
                 </div>
             </div>

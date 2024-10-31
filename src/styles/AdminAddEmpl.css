@@ -18,7 +18,7 @@
 .addEmpl_cont {
     width: 90vw;
     display: flex;
-    height: auto;
+    height: 130vh;
     justify-content: space-between;
     padding-top: 80px;
     color: var(--white);
@@ -53,7 +53,6 @@
 }
 
 .addEmpl_left form button {
-    margin-bottom: 50px;
     border: none;
     background-color: var(--primary_color);
     color: var(--white);
@@ -104,7 +103,7 @@
 @media (max-width: 946px) {
     .addEmpl_cont {
         flex-direction: column;
-        height: auto;
+        height: 210vh;
         justify-content: start;
     }
 

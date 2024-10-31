@@ -34,10 +34,16 @@
     background-color: #d9a15b;
 }
 
+.mainAdmin_stats {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
 /* Styles du tableau de bord */
 .dashboard {
     padding: 20px;
-    background-color: red;
     width: 90vw;
     color: #fff;
 }
@@ -98,4 +104,10 @@
 
 .AdminStats {
     display: flex;
+}
+
+@media (max-width: 786px) {
+    .dashboard-content {
+        flex-direction: column;
+    }
 }

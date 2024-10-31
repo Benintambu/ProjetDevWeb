@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import '../styles/AdminAddEmpl.css'
+import '../styles/AdmiModEmpl.css'
 import SideBarAdm from "../components/SideBarAdm";
 import admiImg from '../assets/img/add_img.png'
 
 
-export default function AdminAddEmpl() {
+export default function AdmiModEmpl() {
     return (
         <div className="add_empl">
             <SideBarAdm />
@@ -39,7 +39,7 @@ function AddEmpl() {
         <main className="mainAdd_empl">
             <div className="addEmpl_cont">
                 <div className="addEmpl_left">
-                    <h3>Ajouter un employé</h3>
+                    <h3>Modifier l'employé</h3>
 
                     <form action="/admin_empl">
                         <div className="input_empl">

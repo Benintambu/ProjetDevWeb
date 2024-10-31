@@ -21,6 +21,7 @@ import AdminStats from './pages/AdminStats';
 import AdminReclMes from './pages/AdminReclMes';
 import AdminModPlate from './pages/AdminModPlate';
 import AdminAddEmpl from './pages/AdminAddEmpl';
+import AdmiModEmpl from './pages/AdmiModEmpl';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path='/admin_rec_mess' element={<AdminReclMes />}></Route>
         <Route path='/admin_mod_plat' element={<AdminModPlate />}></Route>
         <Route path='/admin_add_empl' element={<AdminAddEmpl />}></Route>
+        <Route path='/admin_mod_empl' element={<AdmiModEmpl />}></Route>
       </Routes>
     </Router>
   );
