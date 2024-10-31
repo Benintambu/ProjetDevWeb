@@ -54,7 +54,7 @@
     border-radius: .5rem;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .plate_cont {
@@ -113,6 +113,15 @@
 
 .add_plate:hover {
     background-color: var(--black);
+}
+
+.adMess_bot button {
+    background-color: transparent;
+    padding: 16px 34px;
+    border: 1px solid var(--white);
+    border-radius: .5rem;
+    color: var(--white);
+    cursor: pointer;
 }
 
 @media (max-width: 400px) {

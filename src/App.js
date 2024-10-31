@@ -31,6 +31,9 @@ import GerComm from './pages/GerComm';
 import GerEmply from './pages/GerEmply';
 import GerAddEmply from './pages/GerAddEmply';
 import GerRecl from './pages/GerRecl';
+import GerReclMess from './pages/GerReclMess';
+import GerReclMessRep from './pages/GerReclMessRep';
+import GerReclMessEmpl from './pages/GerReclMessEmpl';
 
 
 function App() {
@@ -68,6 +71,9 @@ function App() {
         <Route path='/ger_emply' element={<GerEmply />}></Route>
         <Route path='/ger_add_emply' element={<GerAddEmply />}></Route>
         <Route path='/ger_recl' element={<GerRecl />}></Route>
+        <Route path='/ger_recl_mess' element={<GerReclMess />}></Route>
+        <Route path='/ger_recl_mess_resp' element={<GerReclMessRep />}></Route>
+        <Route path='/ger_recl_mess_resp_empl' element={<GerReclMessEmpl />}></Route>
       </Routes>
     </Router>
   );

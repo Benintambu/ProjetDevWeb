@@ -1,0 +1,37 @@
+:root {
+    --primary_color: #cfbd97;
+    --second_color: #000000;
+    --black: #1e1e1e;
+    --white: #fff;
+    --white2: #f5f5f5;
+    --main_font: "Echelon";
+    --trans: .3s ease-in;
+}
+
+
+.adMenu_but {
+    display: flex;
+    flex-direction: column;
+}
+
+.adMenuBut_link a:first-child {
+    margin-right: 20px;
+    background-color: var(--primary_color);
+
+}
+
+.adMenuBut_link a {
+    padding: 8px 16px;
+    color: var(--white);
+    margin-top: 20px;
+    background-color: var(--second_color);
+    border-radius: .5rem;
+}
+
+.ger_link {
+    height: 130px;
+}
+
+.butMenu_link p {
+    margin-bottom: 15px;
+}
