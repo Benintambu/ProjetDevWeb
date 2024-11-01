@@ -198,7 +198,7 @@
 }
 
 .cardsBot_right button {
-    background-color: var(--black);
+    background-color: var(--second_color);
     cursor: pointer;
     padding: 8px 16px;
     border-radius: .5rem;
@@ -233,7 +233,7 @@
 
 /* Menu.css */
 .bxs-heart.liked {
-    color: red;
+    color: var(--primary_color);
 }
 
 

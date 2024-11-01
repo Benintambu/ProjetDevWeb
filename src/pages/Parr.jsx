@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import '../styles/Parr.css';
-import profilTwo from '../assets/img/Profil2.jpg'
-import profilThree from '../assets/img/Profil3.jpg'
-
+import profilTwo from '../assets/img/Profil2.jpg';
+import profilThree from '../assets/img/Profil3.jpg';
 
 function Parr() {
     return (
@@ -16,13 +14,29 @@ function Parr() {
 }
 
 const MainParr = () => {
+    // Définir le lien d'affiliation
+    const affiliateLink = "https://votre-lien-d-affiliation.com";
+
+    // Fonction pour copier le lien dans le presse-papiers
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(affiliateLink)
+            .then(() => {
+                alert("Lien copié : " + affiliateLink); // Message de confirmation
+            })
+            .catch(err => {
+                console.error("Erreur lors de la copie : ", err);
+            });
+    };
+
     return (
         <main className="main_parr">
             <div className="mainParr_container">
                 <div className="parr_left">
                     <div className="parr_link">
                         <h5>Obtenir un lien d'affiliation</h5>
-                        <button className="parrLink_link">Copier le lien</button>
+                        <button className="parrLink_link" onClick={copyToClipboard}>
+                            Copier le lien
+                        </button>
                     </div>
                 </div>
 

@@ -1,17 +1,15 @@
-// components/NavBar.js
 import React, { useContext, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from '../contexts/CartContext';
 import gsap from 'gsap';
-import { CartContext } from '../contexts/CartContext'; // Importez le contexte du panier
 import '../styles/Home.css';
 import '../styles/NavBar.css';
 import logo from '../assets/img/logo Zeduc.png';
 import profil from '../assets/img/Profil.jpg';
-
-gsap.registerPlugin();
+import cart from '../assets/img/panier.png';
 
 const NavBar = () => {
-    const { cart } = useContext(CartContext); // Accédez aux articles dans le panier
+    const { cart } = useContext(CartContext);
     const container = useRef(null);
     const animationRef = useRef(null);
 
@@ -24,8 +22,13 @@ const NavBar = () => {
         });
     }, []);
 
-    const playAnimation = () => animationRef.current.play();
-    const reverseAnimation = () => animationRef.current.reverse();
+    const playAnimation = () => {
+        animationRef.current.play();
+    };
+
+    const reverseAnimation = () => {
+        animationRef.current.reverse();
+    };
 
     return (
         <header>
@@ -34,20 +37,26 @@ const NavBar = () => {
                 <ul className="nav_links">
                     <li><Link to="/home" className="active">Accueil</Link></li>
                     <li><Link to="/menu">Menu</Link></li>
-                    <li><Link to="/promo">Promotions</Link></li>
                     <li><Link to="/event">Evénements</Link></li>
-                    <li><Link to="/about">A propos de nous</Link></li>
                     <li><Link to="/contact">Contactez-nous</Link></li>
                 </ul>
                 <div className="nav_end">
-                    <Link to="/cart" className="cart-icon">
+                    <Link to="/cart" style={{ position: 'relative' }}>
                         <i className='bx bxs-cart-alt cart'></i>
                         {cart.length > 0 && (
-                            <span className="cart-count">{cart.length}</span> // Affichez le cercle rouge
+                            <div className="cart-notification">{cart.length}</div>
                         )}
                     </Link>
                     <div className="profil_container">
-                        <img src={profil} alt="Profil" className="profil" />
+                        <div to="/profil">
+                            <img src={profil} alt="Profil" className="profil" />
+                            <ul>
+                                <li><Link to='/profil'>Votre profil</Link></li>
+                                <li><Link to='/histo'>Historique</Link></li>
+                                <li><Link to='/parr'>Parrainage</Link></li>
+                                <li><Link to='/'>Déconnexion</Link></li>
+                            </ul>
+                        </div>
                     </div>
                     <div onClick={playAnimation} className="hamburger">
                         <div className="burger"></div>
@@ -57,32 +66,32 @@ const NavBar = () => {
                 <div className="nav_mobile">
                     <div className="navMobile_cont">
                         <div className="navMobile_head">
-                            <i onClick={reverseAnimation} className='bx bx-x close'></i>
+                            <div className="navMobile_top">
+                                <i onClick={reverseAnimation} className='bx bx-x close'></i>
+                            </div>
+                            <Link to="/profil" className="navMobile_profile">
+                                <div className="navMobile_left">
+                                    <img src={profil} alt="" />
+                                </div>
+                                <div className="navMobile_right">
+                                    <h3>Isaac Ngangu</h3>
+                                    <p>100 <span>Points de fidélité</span></p>
+                                </div>
+                            </Link>
                         </div>
-                        <Link to="/profil" className="navMobile_profile">
-                            <div className="navMobile_left">
-                                <img src={profil} alt="Profil" />
-                            </div>
-                            <div className="navMobile_right">
-                                <h3>Isaac Ngangu</h3>
-                                <p>100 <span>Points de fidélité</span></p>
-                            </div>
-                        </Link>
                         <div className="navMobile_links">
                             <ul>
-                                <li><Link to="/home">Accueil</Link></li>
+                                <li><Link to="/home" className="active">Accueil</Link></li>
                                 <li><Link to="/menu">Menu</Link></li>
-                                <li><Link to="/promo">Promotions</Link></li>
                                 <li><Link to="/event">Evénements</Link></li>
                                 <li><Link to='/histo'>Historique</Link></li>
                                 <li><Link to='/parr'>Parrainage</Link></li>
-                                <li><Link to="/about">A propos de nous</Link></li>
                                 <li><Link to="/contact">Contactez-nous</Link></li>
                                 <li><Link to='/'>Déconnexion</Link></li>
                             </ul>
                         </div>
                         <div className="navMobile_foot">
-                            <p>© 2024 Zeduc-Sp@ce. Tous droits réservés</p>
+                            <p>© 2024 Zeduc-Sp@ce. Tous les droits reservés</p>
                         </div>
                     </div>
                 </div>

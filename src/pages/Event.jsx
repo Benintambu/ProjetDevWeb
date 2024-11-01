@@ -40,7 +40,7 @@ const MainEvent = () => {
                     <div className="eventMiddle_left">
                         <h3>Morpion</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum cumque delectus, officia dolorum atque?</p>
-                        <Link to=''>Jouer</Link>
+                        <Link to='/game'>Jouer</Link>
                     </div>
 
                     <div className="eventMiddle_right">

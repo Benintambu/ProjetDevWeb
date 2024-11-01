@@ -11,7 +11,6 @@ import Contact from './pages/Contact';
 import ModifProfil from './pages/ModifProfil';
 import Histo from './pages/Histo';
 import Parr from './pages/Parr';
-import Promo from './pages/Promo';
 import AdminLogin from './pages/AdminLogin';
 import AdminMenu from './pages/AdminMenu';
 import AdmCreaPlateMain from './pages/AdminCreaPlate';
@@ -36,6 +35,7 @@ import GerReclMessRep from './pages/GerReclMessRep';
 import GerReclMessEmpl from './pages/GerReclMessEmpl';
 import ForgotPass from './pages/ForgotPass';
 import About from './pages/About';
+import Game from './pages/Game';
 
 /*  */
 import { CartProvider } from './contexts/CartContext';
@@ -58,7 +58,6 @@ function App() {
           <Route path='/modifProfil' element={<ModifProfil />}></Route>
           <Route path='/histo' element={<Histo />}></Route>
           <Route path='/parr' element={<Parr />}></Route>
-          <Route path='/promo' element={<Promo />}></Route>
           <Route path='/admin_log' element={<AdminLogin />}></Route>
           <Route path='/admin_menu' element={<AdminMenu />}></Route>
           <Route path='/admin_plate' element={<AdmCreaPlateMain />}></Route>
@@ -82,6 +81,7 @@ function App() {
           <Route path='/ger_recl_mess_resp' element={<GerReclMessRep />}></Route>
           <Route path='/ger_recl_mess_resp_empl' element={<GerReclMessEmpl />}></Route>
           <Route path='/forgot' element={<ForgotPass />}></Route>
+          <Route path='/game' element={<Game />}></Route>
         </Routes>
       </Router>
     </CartProvider>

@@ -29,7 +29,7 @@ function AdmCreaPlateMain() {
 
         return () => {
             if (inputProfil) {
-                inputProfil.onchange = null; // Nettoie l'événement
+                inputProfil.onchange = null;
             }
         };
     }, []);
