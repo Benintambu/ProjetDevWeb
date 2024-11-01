@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b67e53ff.css",
+    "main.js": "/static/js/main.f717c762.js",
+    "static/js/453.03836724.chunk.js": "/static/js/453.03836724.chunk.js",
+    "static/media/img_promo.jpg": "/static/media/img_promo.11f2599eff36d0a63c90.jpg",
+    "static/media/Profil3.jpg": "/static/media/Profil3.f70659376981dea9c83c.jpg",
+    "static/media/Profil2.jpg": "/static/media/Profil2.e50fad46c7bba1e7c01f.jpg",
+    "static/media/well-done-steak-homemade-potatoes.jpg": "/static/media/well-done-steak-homemade-potatoes.083a146bac5aade701f4.jpg",
+    "static/media/Profil.jpg": "/static/media/Profil.064e0455f03ffa7df97d.jpg",
+    "static/media/empl.jpg": "/static/media/empl.4be99d64d8e9ee76dfc0.jpg",
+    "static/media/quizz.jpg": "/static/media/quizz.3047e9bb3d50482213bb.jpg",
+    "static/media/gamer.jpg": "/static/media/gamer.d60d3ab638f05559bb4c.jpg",
+    "static/media/grilled-steak-fillet-with-fresh-vegetable-salad-generated-by-ai.jpg": "/static/media/grilled-steak-fillet-with-fresh-vegetable-salad-generated-by-ai.aa5fc9692568a43d7b8c.jpg",
+    "static/media/food.jpg": "/static/media/food.534b8321456759eb253f.jpg",
+    "static/media/top-view-table-full-delicious-food-composition.jpg": "/static/media/top-view-table-full-delicious-food-composition.6d15071176976c7f45d9.jpg",
+    "static/media/plat1.png": "/static/media/plat1.391fe83f96dfd6afb954.png",
+    "static/media/Profil4.jpg": "/static/media/Profil4.9371db765e6c581fe890.jpg",
+    "static/media/morpion.jpeg": "/static/media/morpion.54e5506702d07c3735e2.jpeg",
+    "static/media/admin.jpg": "/static/media/admin.e7be1c52123001feaa53.jpg",
+    "static/media/logo Zeduc.png": "/static/media/logo Zeduc.4d20c0e7df3a6e4229c0.png",
+    "static/media/Squid game invitation card.jpeg": "/static/media/Squid game invitation card.ccb8e026e0d932ccd5b7.jpeg",
+    "static/media/Echelon.ttf": "/static/media/Echelon.1375e1a6c3ad047fef19.ttf",
+    "static/media/Echelon.woff": "/static/media/Echelon.93beb24975293385f87b.woff",
+    "static/media/utilisateur.png": "/static/media/utilisateur.ed2aa2228fbfb231a156.png",
+    "static/media/Echelon.woff2": "/static/media/Echelon.27d01d5528952751d3c6.woff2",
+    "static/media/add_img.png": "/static/media/add_img.92db14e671215f4897d0.png",
+    "index.html": "/index.html",
+    "main.b67e53ff.css.map": "/static/css/main.b67e53ff.css.map",
+    "main.f717c762.js.map": "/static/js/main.f717c762.js.map",
+    "453.03836724.chunk.js.map": "/static/js/453.03836724.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b67e53ff.css",
+    "static/js/main.f717c762.js"
+  ]
+}
