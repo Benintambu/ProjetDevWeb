@@ -19,9 +19,18 @@ const plat = [
 const Menu = () => {
     const { addToCart } = useContext(CartContext);
     const [searchTerm, setSearchTerm] = useState("");
+    const [likedPlats, setLikedPlats] = useState({});
 
     const handleSearch = (event) => {
         setSearchTerm(event.target.value.toLowerCase());
+    };
+
+    // Fonction pour gérer le clic sur le cœur
+    const toggleLike = (id) => {
+        setLikedPlats(prevLikedPlats => ({
+            ...prevLikedPlats,
+            [id]: !prevLikedPlats[id] // Inverse l'état de "like" de l'élément
+        }));
     };
 
     const filteredPlats = plat.filter(plate =>
@@ -42,7 +51,9 @@ const Menu = () => {
                     <button onClick={() => addToCart(plate)}>Ajouter au panier</button>
                 </div>
                 <div className="cardsBot_right">
-                    <button><i className='bx bxs-heart'></i></button>
+                    <button onClick={() => toggleLike(plate.id)}>
+                        <i className={`bx bxs-heart ${likedPlats[plate.id] ? 'liked' : ''}`}></i>
+                    </button>
                 </div>
             </div>
         </div>

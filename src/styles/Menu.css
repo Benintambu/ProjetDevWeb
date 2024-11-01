@@ -231,9 +231,11 @@
     left: 0;
 }
 
-.favori {
-    color: var(--primary_color);
+/* Menu.css */
+.bxs-heart.liked {
+    color: red;
 }
+
 
 .card_bot p,
 .card_bot span {
