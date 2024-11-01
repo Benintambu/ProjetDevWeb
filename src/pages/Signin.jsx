@@ -3,7 +3,7 @@ import '../styles/SignIn.css';
 import { Link } from "react-router-dom";
 import logo from '../assets/img/logo Zeduc.png'
 
-export default function SignIn() {
+export default function Signin() {
     var password = document.getElementById('password');
 
     function showPassword() {
@@ -102,4 +102,3 @@ export default function SignIn() {
         </div>
     )
 }
-

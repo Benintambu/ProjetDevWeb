@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import '../styles/ModifProfil.css';
@@ -17,15 +17,36 @@ function ModifProfil() {
 }
 
 const MainProfil = () => {
+
+    const profilePicRef = useRef(null);
+    const inputProfilRef = useRef(null);
+
+    useEffect(() => {
+        const inputProfil = inputProfilRef.current;
+        const profilePic = profilePicRef.current;
+
+        if (inputProfil) {
+            inputProfil.onchange = function () {
+                profilePic.src = URL.createObjectURL(inputProfil.files[0]);
+            };
+        }
+
+        return () => {
+            if (inputProfil) {
+                inputProfil.onchange = null; // Nettoie l'événement
+            }
+        };
+    }, []);
+
     return (
         <main className="main_modif">
             <div className="modifProfil_cont">
                 <div className="modif_left">
                     <div className="profil_tof">
-                        <img src={user} alt="" />
+                        <img src={user} alt="" ref={profilePicRef} />
                     </div>
 
-                    <input type="file" name="file" id="file" placeholder="file" />
+                    <input type="file" name="file" id="file" placeholder="file" ref={inputProfilRef} />
                     <label htmlFor="file">Choisir une photo</label>
                 </div>
 

@@ -206,7 +206,7 @@ nav {
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 924px) {
     .nav_links {
         display: none;
     }

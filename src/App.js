@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login'
-import SignIn from './pages/SignIn';
+import SignIn from './pages/Signin';
 import Home from './pages/Home';
 import Event from './pages/Event';
 import Menu from './pages/Menu';
@@ -34,48 +34,57 @@ import GerRecl from './pages/GerRecl';
 import GerReclMess from './pages/GerReclMess';
 import GerReclMessRep from './pages/GerReclMessRep';
 import GerReclMessEmpl from './pages/GerReclMessEmpl';
+import ForgotPass from './pages/ForgotPass';
+import About from './pages/About';
+
+/*  */
+import { CartProvider } from './contexts/CartContext';
 
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Login />}></Route>
-        <Route path='/signin' element={<SignIn />}></Route>
-        <Route path='/home' element={<Home />}></Route>
-        <Route path='/menu' element={<Menu />}></Route>
-        <Route path='/event' element={<Event />}></Route>
-        <Route path='/profil' element={<Profil />}></Route>
-        <Route path='/cart' element={<Cart />}></Route>
-        <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/modifProfil' element={<ModifProfil />}></Route>
-        <Route path='/histo' element={<Histo />}></Route>
-        <Route path='/parr' element={<Parr />}></Route>
-        <Route path='/promo' element={<Promo />}></Route>
-        <Route path='/admin_log' element={<AdminLogin />}></Route>
-        <Route path='/admin_menu' element={<AdminMenu />}></Route>
-        <Route path='/admin_plate' element={<AdmCreaPlateMain />}></Route>
-        <Route path='/admin_empl' element={<AdminEmpl />}></Route>
-        <Route path='/admin_recl' element={<AdminRecl />}></Route>
-        <Route path='/admin_stats' element={<AdminStats />}></Route>
-        <Route path='/admin_rec_mess' element={<AdminReclMes />}></Route>
-        <Route path='/admin_mod_plat' element={<AdminModPlate />}></Route>
-        <Route path='/admin_add_empl' element={<AdminAddEmpl />}></Route>
-        <Route path='/admin_mod_empl' element={<AdmiModEmpl />}></Route>
-        <Route path='/emplo_log' element={<EmploLogin />}></Route>
-        <Route path='/emplo_menu' element={<EmploMenu />}></Route>
-        <Route path='/emplo_recl' element={<EmploRecl />}></Route>
-        <Route path='/emplo_recl_mes' element={<EmploReclMes />}></Route>
-        <Route path='/emplo_stats' element={<EmploStats />}></Route>
-        <Route path='/ger_comm' element={<GerComm />}></Route>
-        <Route path='/ger_emply' element={<GerEmply />}></Route>
-        <Route path='/ger_add_emply' element={<GerAddEmply />}></Route>
-        <Route path='/ger_recl' element={<GerRecl />}></Route>
-        <Route path='/ger_recl_mess' element={<GerReclMess />}></Route>
-        <Route path='/ger_recl_mess_resp' element={<GerReclMessRep />}></Route>
-        <Route path='/ger_recl_mess_resp_empl' element={<GerReclMessEmpl />}></Route>
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Login />}></Route>
+          <Route path='/signin' element={<SignIn />}></Route>
+          <Route path='/home' element={<Home />}></Route>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/menu' element={<Menu />}></Route>
+          <Route path='/event' element={<Event />}></Route>
+          <Route path='/profil' element={<Profil />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/modifProfil' element={<ModifProfil />}></Route>
+          <Route path='/histo' element={<Histo />}></Route>
+          <Route path='/parr' element={<Parr />}></Route>
+          <Route path='/promo' element={<Promo />}></Route>
+          <Route path='/admin_log' element={<AdminLogin />}></Route>
+          <Route path='/admin_menu' element={<AdminMenu />}></Route>
+          <Route path='/admin_plate' element={<AdmCreaPlateMain />}></Route>
+          <Route path='/admin_empl' element={<AdminEmpl />}></Route>
+          <Route path='/admin_recl' element={<AdminRecl />}></Route>
+          <Route path='/admin_stats' element={<AdminStats />}></Route>
+          <Route path='/admin_rec_mess' element={<AdminReclMes />}></Route>
+          <Route path='/admin_mod_plat' element={<AdminModPlate />}></Route>
+          <Route path='/admin_add_empl' element={<AdminAddEmpl />}></Route>
+          <Route path='/admin_mod_empl' element={<AdmiModEmpl />}></Route>
+          <Route path='/emplo_log' element={<EmploLogin />}></Route>
+          <Route path='/emplo_menu' element={<EmploMenu />}></Route>
+          <Route path='/emplo_recl' element={<EmploRecl />}></Route>
+          <Route path='/emplo_recl_mes' element={<EmploReclMes />}></Route>
+          <Route path='/emplo_stats' element={<EmploStats />}></Route>
+          <Route path='/ger_comm' element={<GerComm />}></Route>
+          <Route path='/ger_emply' element={<GerEmply />}></Route>
+          <Route path='/ger_add_emply' element={<GerAddEmply />}></Route>
+          <Route path='/ger_recl' element={<GerRecl />}></Route>
+          <Route path='/ger_recl_mess' element={<GerReclMess />}></Route>
+          <Route path='/ger_recl_mess_resp' element={<GerReclMessRep />}></Route>
+          <Route path='/ger_recl_mess_resp_empl' element={<GerReclMessEmpl />}></Route>
+          <Route path='/forgot' element={<ForgotPass />}></Route>
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

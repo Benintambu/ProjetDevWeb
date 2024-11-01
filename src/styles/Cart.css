@@ -161,6 +161,35 @@
     width: 20px;
 }
 
+.cartItm_img {
+    width: 200px;
+    height: 150px;
+    position: relative;
+}
+
+.cart_item {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.cartItm_left input {
+    background-color: var(--second_color);
+    border: none;
+    padding-left: 9px;
+    height: 40px;
+    color: var(--white);
+}
+
+.cartItm_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 @media (max-width: 540px) {
     .histo_left {
         flex-direction: column;

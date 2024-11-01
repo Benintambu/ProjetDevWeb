@@ -6,7 +6,7 @@ import Home from "./Home";
 import logo from '../assets/img/logo Zeduc.png'
 
 
-export default function Login() {
+export default function ForgotPass() {
     function showPassword() {
         const password = document.getElementById('password');
         const showbtn = document.querySelector('.show_log');
@@ -28,35 +28,23 @@ export default function Login() {
                     <h1><Link to="/home"><img src={logo} className="logo" /></Link></h1>
                 </div>
 
-                <form action="/home">
-                    <h2>Connectez-vous</h2>
-                    <p>Entez vos identifiants pour avoir accès à votre historique</p>
+                <form action="/">
+                    <h2>Réinitialisez votre mot de passe</h2>
+                    <p>Entrez votre email pour recevoir un message <br />de confirmation</p>
 
                     <div className="input_container">
                         <div className="input_item">
                             <input type="email" name="email" id="email" placeholder="email" required />
                             <i class='bx bxs-envelope' ></i>
                         </div>
-
-                        <div className="input_item">
-                            <input type="password" name="password" id="password" placeholder="password" required />
-                            <i class='bx bxs-show eye show_log' onClick={showPassword}></i>
-                        </div>
                     </div>
 
-                    <div className="form_link">
-                        <Link to="/forgot" className="forgot">Mot de passe oublié ?</Link>
-                    </div>
                     <button type="submit" className="button">valider</button>
-                    <div className="sign"><p>Vous n'avez pas de compte ? <Link to="/signin">Inscrivez-vous</Link></p></div>
                 </form>
             </div>
 
             <div className="right_item">
-                <div className="right_content">
-                    <h2>Connectez-vous</h2>
-                    <p>Pour avoir accès à toute nos fonctionnalités</p>
-                </div>
+                <div className="right_content"></div>
             </div>
         </div>
     )
