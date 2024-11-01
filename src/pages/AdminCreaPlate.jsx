@@ -38,7 +38,7 @@ function AdmCreaPlateMain() {
         <main className="admPlate_main">
             <div className="admPlate_container">
                 <h3>Ajouter un plat</h3>
-                <form action="">
+                <form action="/admin_menu">
                     <div className="admForm_right">
                         <input type="file" name="photo" id="photo" ref={inputProfilRef} />
                         <label htmlFor="photo" >
